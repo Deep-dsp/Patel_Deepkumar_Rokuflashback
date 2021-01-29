@@ -1,0 +1,29 @@
+{
+  "name": "patel_deepkumar_rokuflashback",
+  "version": "1.0.0",
+  "description": "Straming App",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "nodemon app & browser-sync start --proxy 'localhost:5050' --files 'index.html' 'public'",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deep-dsp/Patel_Deepkumar_Rokuflashback.git"
+  },
+  "keywords": [
+    "Movies",
+    "Tv",
+    "shows",
+    "Music"
+  ],
+  "author": "Deepkumar Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Deep-dsp/Patel_Deepkumar_Rokuflashback/issues"
+  },
+  "homepage": "https://github.com/Deep-dsp/Patel_Deepkumar_Rokuflashback#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
