@@ -13,6 +13,7 @@ header{
     align-items: center;
     width: 90%;
     margin: auto;
+    position: relative;
 
     .roku-title{
         font-family: 'Orbitron', sans-serif;
@@ -30,7 +31,26 @@ nav
 
         li{
             list-style: none;
-            text-decoration: none;
+            
+
+            a{
+                text-decoration: none;
+                font-family: 'Roboto', sans-serif;
+                color: #fff;
+
+                transition: 0.2s ease;
+                -moz-transition: 0.2s ease;
+                -o-transition: 0.2s ease;
+                -webkit-transition: 0.2s ease;
+                -ms-transition: 0.2s ease;
+            }
+
+            a:hover{
+                color: white;
+                padding: 10px;
+                background: rgb(189, 3, 40);
+                cursor: pointer;
+            }
         }
     }
 }
@@ -45,6 +65,16 @@ nav
     i{
         font-size: 2rem;
         color: lightgrey;
+        cursor: pointer;
+    }
+
+    i:hover{
+        transition: 0.2s ease;
+        -moz-transition: 0.2s ease;
+        -o-transition: 0.2s ease;
+        -webkit-transition: 0.2s ease;
+        -ms-transition: 0.2s ease;
+        color: white;
     }
 
     button.login-button{
@@ -69,10 +99,60 @@ nav
 
     button.login-button:hover{
         background: rgb(189, 3, 40);
+        cursor: pointer;
     }
 }
 
 // hamburger menu hide class
 .bar-hidden{
     display: none;
+}
+
+//user-profile-panel animatin for classList
+.userprofileanim{
+    right: 100px;
+    opacity: 1;
+} 
+
+.user-profile-panel{
+    position: absolute;
+    top: 10vh;
+    right: -100px;
+    opacity: 0;
+
+    background: #434343;
+    width: 10vw;
+    height: 15vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;             
+    -ms-transition: 0.5s ease;
+
+    p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2rem;
+        color: #fff;
+        height: 35px;
+        padding-left:20px;
+        
+        display: flex;
+        align-items: center;
+        transition: 0.2s ease;
+        -moz-transition: 0.2s ease;
+        -o-transition: 0.2s ease;
+        -webkit-transition: 0.2s ease;             
+        -ms-transition: 0.2s ease;
+    }
+
+    p:hover{
+        cursor: pointer;
+        background: grey;
+        // font-size: 1.3rem;
+    }
 }
