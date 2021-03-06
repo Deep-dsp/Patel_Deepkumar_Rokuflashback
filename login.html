@@ -33,6 +33,32 @@
             </div>
         </div>
     </main>
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
+    <script>
+        // login-register slider
+            
+            var x = document.querySelector("#login");
+            var y = document.querySelector("#register");
+            var z = document.querySelector("#btn");
+            
+            document.querySelector("#register-btn").addEventListener('click', ()=>{
+                console.log("clicked");
+
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+            });
+
+            document.querySelector("#log-btn").addEventListener('click', ()=>{
+                console.log("clicked");
+
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0px";
+            });
+            
+            // login-register slider
+
+    </script>
 </body>
 </html>
