@@ -8,7 +8,7 @@ server.use(express.static('public'));
 
 server.get("/" , (req, res) => {
   console.log("Hit your Home Route");
-  res.sendFile(path.join(__dirname, "stream.html")); //localhost:3000/index.html
+  res.sendFile(path.join(__dirname, "login.html")); //localhost:3000/index.html
 })
 
 const port = process.env.PORT || 3000;
